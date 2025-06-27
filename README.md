@@ -1,2 +1,44 @@
 # Brix
-A shell script which implements declarative package management using Homebrew as a backend.
+### What This Is
+
+A shell script for macOS that implements declarative package management using Homebrew as a backend. This is not a package manager per se as all of the heavy lifting regarding package management is done by Homebrew. This script just automates those tasks using Homebrew’s built in commands.
+
+The name is a portmanteau of “brew” (as in “Homebrew”) and “Nix.” For those unaware, Nix is a cross-platform declarative package manager. I’d gotten rather used to using it, as I use NixOS for my gaming PC, but for whatever reason I was having trouble setting it up on my last MacBook so I decided to throw this together. From my understand macOS Nix doesn’t handle GUI based programs anyways, so there are definitely situations in which this could be used alongside Nix.
+
+The script isn’t very complex. Honestly, I got the script essentially working in like two days and I’m not a particularly skilled programmer by any means. After that, most of my time on this was spent refining the user space.
+
+One issue I’ve always had with Nix is it felt too much like it was made exclusively for engineers. Not that this is inherently a bad thing, but I just wanted this to be different.
+
+
+### Usage
+
+<img width="433" alt="Screenshot 2025-06-27 at 9 08 50 AM" src="https://github.com/user-attachments/assets/1cf6426a-5748-4f5d-8f24-14fbf4bbc0d0" />
+
+"Brix" is self contained within its own folder (pictured above). The configuration file is “Wall.rtf.” In this file you can list Homebrew packages that can be found at [brew.sh]. You can separate the packages by spaces or line breaks, either will work fine. I use line breaks, because I think it looks neater, but it will work the same either way. Package names must be written EXACTLY as they appear in the Homebrew repository, although capitalization does not matter.
+
+Once the configuration is to your liking you can simply double click “Deploy Brix.” From here the script will do all the work. If Homebrew is not installed this script will install Homebrew.
+
+Every time Brix successfully deploys a configuration it makes a backup of Wall.rtf to the Backups folder, renaming the file with the date and time of the deployment.
+
+
+### How It Works
+
+The script reads the contents of “Wall.rtf” and compares that to what Homebrew packages are currently installed. The script then uses Homebrew’s commands to install then uninstall packages accordingly.
+
+
+### Future Plans
+
+I’d like to expand functionality to include other package managers such as [MacPorts] and [Nix]/[Lix]. [MAS] would also be nice, but I don’t really know how feasible that actually is. I can't even get MAS to work on my system and getting it to work isn't exactly high on my on my to do list. Video game clients such as Steam, Epic, and GOG should be doable using their respective CLI clients.
+
+In addition, I’d like to include options for user settings like login items, Dock settings, and other things of that sort in future versions.
+
+
+### Bug Reporting
+
+If you have problems while using this script I ask you to first report it to this project’s GitHub page. I’ll try to help you or at least redirect you to someone who can. Since this uses Homebrew as a backend there’s a pretty good chance any problems people would have wouldn’t actually be caused by Brix itself, but I still ask you reach out to me first.
+
+[MacPorts]: https://www.macports.org
+[Lix]: https://lix.systems
+[Nix]: https://nixos.org
+[MAS]: https://github.com/mas-cli/mas
+[brew.sh]: https://brew.sh
