@@ -33,7 +33,7 @@ The script reads the contents of “Wall.rtf” and compares that to what Homebr
 
 ### Why RTF files?
 
-This is something I thought I'd address off the bat, because TXT format would be simpler for the script to read. I want this to integrate into macOS as well as possible, while in the future I intend to include multi-file configurations. As such I think users should be able to create new configuration files in TextEdit, since that's a built in macOS tool. In addition, single-file configurations may eventually be able to read formatting not supported by simple TXT files.
+This is something I thought I'd address off the bat, because using a TXT formatted file would be simpler for the script to read. However, I want this to integrate into macOS as well as possiblew and in the future I intend to include multi-file configurations. As such I think users should be able to create new configuration files in TextEdit, since that's a built in macOS tool. In addition, single-file configurations may eventually be able to read formatting not supported by simple TXT files.
 
 
 ### Future Plans
