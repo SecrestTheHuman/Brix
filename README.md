@@ -1,7 +1,7 @@
 
 ![Brix Title](https://github.com/user-attachments/assets/790335f1-eb6f-4b97-a5e4-473054262588)
 
-### What This Is!
+### What This Is
 
 
 A shell script for macOS that implements declarative package management using Homebrew as a backend. This is not a package manager per se as all the heavy lifting regarding package management is done by Homebrew. This script just automates those tasks using Homebrew’s built in commands.
