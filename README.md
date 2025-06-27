@@ -29,15 +29,20 @@ Every time Brix successfully deploys a configuration it makes a backup of Wall.r
 The script reads the contents of “Wall.rtf” and compares that to what Homebrew packages are currently installed. The script then uses Homebrew’s commands to install then uninstall packages accordingly.
 
 
+### Why RTF files?
+
+This is something I thought I'd address off the bat, because TXT format would be simpler for the script to read. I want this to integrate into macOS as well as possible, while in the future I intend to include multi-file configurations. As such I think users should be able to create new configuration files in TextEdit, since that's a built in macOS tool. In addition, single-file configurations may eventually be able to read formatting not supported by simple TXT files.
+
+
 ### Future Plans
 
-I’d like to expand functionality to include other package managers such as [MacPorts] and [Nix]/[Lix]. [MAS] would also be nice, but I don’t really know how feasible that actually is. I can't even get MAS to work on my system and getting it to work isn't exactly high on my on my to do list. Video game clients such as Steam, Epic, and GOG should be doable using their respective CLI clients.
+I’d like to expand functionality to include other package managers such as [MacPorts] and [Nix]/[Lix]. [MAS] would also be nice, but I don’t really know how feasible that actually is. I can't even get MAS to work on my system and getting it to work isn't exactly high on my on my to do list. It's hardly an essential utility. Video game clients such as Steam, Epic, and GOG should be doable using their respective CLI clients.
 
 In addition, I’d like to include an options for user settings like login items, Dock settings, and other things of that sort in future versions.
 
-Making this package available through Homebrew is something I'm interested in doing, although frankly I'm not actually sure how to do that. Relatedly, I'd like to make a CLI interface for people who are so inclined.
+Making this package available through Homebrew is something I'm interested in doing, although frankly (and somewhat ironically) I'm not actually sure how to do that. Relatedly, I'd like to make a CLI interface for people who are so inclined.
 
-I'm also in the very near future going to make a script which lets you turn your Homebrew configuration into a Brix file. Probably gonna call it "Xirb Yolped." A way to automatically update Brix is also on the good ol' master to do list.
+I'm also in the very near future going to make a script which will turn your Homebrew configuration into a Brix file. Probably gonna call it "Xirb Yolped." A way to automatically update Brix is also on the good ol' master to do list as is the ability to specify specific versions of problems. This is a feature included in Brew, but some work would be needed to get Brix to work well with that feature.
 
 
 ### Bug Reporting
