@@ -17,7 +17,7 @@ One issue I’ve always had with Nix is it felt too much like it was made exclus
 
 <img width="433" alt="Screenshot 2025-06-27 at 9 08 50 AM" src="https://github.com/user-attachments/assets/1cf6426a-5748-4f5d-8f24-14fbf4bbc0d0" />
 
-"Brix" is self contained within its own folder (pictured above). The configuration file is “Wall.rtf.” In this file you can list Homebrew packages that can be found at [brew.sh]. You can separate the packages by spaces or line breaks, either will work fine. I use line breaks, because I think it looks neater, but it will work the same either way. Package names must be written EXACTLY as they appear in the Homebrew repository, although capitalization does not matter.
+"Brix" is self contained within its own folder (pictured above). This folder can be placed anywhere in the system. I put it in my User folder, but it will work fine wherever you put it. Just make sure you remember where you it. The configuration file is “Wall.rtf.” In this file you can list Homebrew packages that can be found at [brew.sh]. You can separate the packages by spaces or line breaks, either will work fine. I use line breaks, because I think it looks neater, but it will work the same either way. Package names must be written EXACTLY as they appear in the Homebrew repository, although capitalization does not matter.
 
 Once the configuration is to your liking you can simply double click “Deploy Brix.” From here the script will do all the work. If Homebrew is not installed this script will install Homebrew.
 
@@ -33,7 +33,9 @@ The script reads the contents of “Wall.rtf” and compares that to what Homebr
 
 I’d like to expand functionality to include other package managers such as [MacPorts] and [Nix]/[Lix]. [MAS] would also be nice, but I don’t really know how feasible that actually is. I can't even get MAS to work on my system and getting it to work isn't exactly high on my on my to do list. Video game clients such as Steam, Epic, and GOG should be doable using their respective CLI clients.
 
-In addition, I’d like to include options for user settings like login items, Dock settings, and other things of that sort in future versions.
+In addition, I’d like to include an options for user settings like login items, Dock settings, and other things of that sort in future versions.
+
+I'm also in the very near future going to make a script which lets you turn your Brew configuration into a Brix file. Probably gonna call it "Xirb Yolped."
 
 
 ### Bug Reporting
