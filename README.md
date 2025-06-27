@@ -1,11 +1,11 @@
 # Brix
 ### What This Is
 
-A shell script for macOS that implements declarative package management using Homebrew as a backend. This is not a package manager per se as all of the heavy lifting regarding package management is done by Homebrew. This script just automates those tasks using Homebrew’s built in commands.
+A shell script for macOS that implements declarative package management using Homebrew as a backend. This is not a package manager per se as all the heavy lifting regarding package management is done by Homebrew. This script just automates those tasks using Homebrew’s built in commands.
 
 The name is a portmanteau of “brew” (as in “Homebrew”) and “Nix.” For those unaware, Nix is a cross-platform declarative package manager. I’d gotten rather used to using it, as I use NixOS for my gaming PC, but for whatever reason I was having trouble setting it up on my last MacBook so I decided to throw this together. From my understand macOS Nix doesn’t handle GUI based programs anyways, so there are definitely situations in which this could be used alongside Nix.
 
-The script isn’t very complex. Honestly, I got the script essentially working in like two days and I’m not a particularly skilled programmer by any means. After that, most of my time on this was spent refining the user space.
+The script isn’t very complex. Honestly, I got the script essentially working in like two days and I’m not a particularly skilled programmer by any means. After that, most of my time on this was spent refining the user space and cleaning up the code.
 
 One issue I’ve always had with Nix is it felt too much like it was made exclusively for engineers. Not that this is inherently a bad thing, but I just wanted this to be different.
 
