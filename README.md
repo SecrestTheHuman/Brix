@@ -35,7 +35,9 @@ I’d like to expand functionality to include other package managers such as [Ma
 
 In addition, I’d like to include an options for user settings like login items, Dock settings, and other things of that sort in future versions.
 
-I'm also in the very near future going to make a script which lets you turn your Brew configuration into a Brix file. Probably gonna call it "Xirb Yolped."
+Making this package available through Homebrew is something I'm interested in doing, although frankly I'm not actually sure how to do that. Relatedly, I'd like to make a CLI interface for people who are so inclined.
+
+I'm also in the very near future going to make a script which lets you turn your Homebrew configuration into a Brix file. Probably gonna call it "Xirb Yolped." A way to automatically update Brix is also on the good ol' master to do list.
 
 
 ### Bug Reporting
