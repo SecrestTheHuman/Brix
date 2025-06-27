@@ -1,6 +1,8 @@
 
 ![Brix Title](https://github.com/user-attachments/assets/790335f1-eb6f-4b97-a5e4-473054262588)
 
+## Please be aware that running "Deploy Brix" will install [Homebrew] if it is not already installed.
+
 ### What This Is
 
 
@@ -54,3 +56,4 @@ If you have problems while using this script I ask you to first report it to thi
 [Nix]: https://nixos.org
 [MAS]: https://github.com/mas-cli/mas
 [brew.sh]: https://brew.sh
+[Homebrew]: https://brew.sh
