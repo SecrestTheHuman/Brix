@@ -6,7 +6,7 @@
 ### What This Is
 
 
-A shell script for macOS that implements declarative package management using Homebrew as a backend. This is not a package manager per se as all the heavy lifting regarding package management is done by Homebrew. This script just automates those tasks using Homebrew’s built in commands.
+A shell script for macOS that implements declarative package management using Homebrew as a backend. This is not a package manager per se as all the heavy lifting regarding package management is done by Homebrew. This script just automates those tasks using Homebrew’s built in commands. Since the ultimate goal of this is in part to allow it to work with mulitple package managers, it would not be unfair to refer to this as a "package manager manager," not unlike how [rEFInd] is essentially a boot manager manager.
 
 The name is a portmanteau of “brew” (as in “Homebrew”) and “Nix.” For those unaware, Nix is a cross-platform declarative package manager. I’d gotten rather used to using it, as I use NixOS for my gaming PC, but for whatever reason I was having trouble setting it up on my last MacBook so I decided to throw this together. From my understand macOS Nix doesn’t handle GUI based programs anyways, so there are definitely situations in which this could be used alongside Nix.
 
@@ -38,14 +38,19 @@ This is something I thought I'd address off the bat, because using a TXT formatt
 
 ### Future Plans
 
-I’d like to expand functionality to include other package managers such as [MacPorts] and [Nix]/[Lix]. [MAS] would also be nice, but I don’t really know how feasible that actually is. I can't even get MAS to work on my system and getting it to work isn't exactly high on my on my to do list. It's hardly an essential utility. Video game clients such as Steam, Epic, and GOG should be doable using their respective CLI clients.
+I’d like to expand functionality to include other package managers such as [MacPorts], [Fink], [pkgin], and [Nix]/[Lix]. [MAS] would also be nice, but I don’t really know how feasible that actually is right now. I can't even get MAS to work on my system and getting it to work isn't exactly high on my on my to do list. It's hardly an essential utility.
 
-In addition, I’d like to include an options for user settings like login items, Dock settings, and other things of that sort in future versions.
+Video game clients such as Steam, Epic, and GOG should be doable using their respective CLI clients. In addition, I’d like to include an options for user settings like login items, Dock settings, and other things of that sort in future versions.
 
-Making this package available through Homebrew is something I'm interested in doing, although frankly (and somewhat ironically) I'm not actually sure how to do that. Relatedly, I'd like to make a CLI interface for people who are so inclined.
+Making this package available through Homebrew is something I'm interested in doing, although frankly (and somewhat ironically) I'm not actually sure how to "do" that. Relatedly, I'd like to make a CLI interface for people who are so inclined.
 
-I'm also in the very near future going to make a script which will turn your Homebrew configuration into a Brix file. Probably gonna call it "Xirb Yolped." A way to automatically update Brix is also on the good ol' master to do list as is the ability to specify specific versions of problems. This is a feature included in Brew, but some work would be needed to get Brix to work well with that feature.
+I'm also in the very near future going to make a script which will turn your Homebrew configuration into a Brix file. Probably gonna call it "xirB yolpeD."
 
+A way to automatically update Brix is also on the good ol' master to do list as is the ability to install specific versions of packages. This is a feature included in Brew, but some work is still needed to get Brix to work well with that feature.
+
+### Compatibily
+
+This has only been tested with Sequoia, but presumably it should work with any version of macOS. Truth be told, it'd likely work with little to no modification on any Unix-like system so long as you have Homebrew installed. It could also be fairly easily modified to work with apt or really any other package maneger. It's designed to be pretty modular, something I intend to expand upon in further versions.
 
 ### Bug Reporting
 
@@ -57,3 +62,6 @@ If you have problems while using this script I ask you to first report it to thi
 [MAS]: https://github.com/mas-cli/mas
 [brew.sh]: https://brew.sh
 [Homebrew]: https://brew.sh
+[rEFInd]: https://github.com/JackieXie168/rEFInd
+[Fink]: https://www.finkproject.org
+[pkgin]: https://pkgin.net
