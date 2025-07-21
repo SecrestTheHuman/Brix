@@ -1,0 +1,31 @@
+#!/bin/sh
+cd "`dirname -- "$0"`";   # Move shell to the script's folder
+
+indented=(
+	"error_no_file"
+	"error_no_brew"
+	"install_brew"
+	"evaluating"
+	"no_changes"
+	"revision"
+	"no_update"
+	);
+
+##	Grab global language
+lang=$( locale | grep LANG | sed 's/.*\=\"//' | sed 's/\..*//' )
+
+if [ ! -f $lang/$1 ];then		#	If no folder for language
+	lang="en_US";				#	Default to US English
+fi
+
+string=$( cat $lang/$1 );
+
+if [[ $1 == "error"* ]];	then
+	string="\033[1;31m$( cat $lang/error )\033[0m $string";
+fi
+
+if [[ "${indented[@]}" =~ $1 ]]; then
+	../space "$string $2";
+else
+	echo "$string $2";
+fi
