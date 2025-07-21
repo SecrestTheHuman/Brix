@@ -1,0 +1,4 @@
+#!/bin/sh
+space="	";
+
+echo "$space$1";
